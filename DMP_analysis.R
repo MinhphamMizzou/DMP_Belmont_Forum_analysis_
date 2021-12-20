@@ -92,8 +92,8 @@ plot2 <- dtm %>%
 plot2 + theme_apa()
 
 #----Figure 3. Criteria scores: DMPs with scores averaging ≥1 and with scores averaging <1
-dtm_long <- gather(dtm, Criteria, value, 'O1':'A8', factor_key = TRUE)
-dtm_long <- gather(dtm, Plan, value, 'O1':'A8', factor_key = TRUE)
+dtm_long <- gather(dtm, Criteria, value, 'Oc1':'Ar8', factor_key = TRUE)
+dtm_long <- gather(dtm, Plan, value, 'Oc1':'Ar8', factor_key = TRUE)
 
 
 plan_s <- dtm_long%>%
